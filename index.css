@@ -73,7 +73,7 @@
       box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
     }
 
-    .submit-button:active { 
+    .submit-button:active {
       color: black;
       background-color: white;
     }
@@ -102,3 +102,4 @@
       background-color: hsl(25, 97%, 53%);
       color: black;
     }
+    
