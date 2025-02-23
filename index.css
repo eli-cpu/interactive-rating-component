@@ -67,6 +67,8 @@
       padding: 10px;
       border-radius: 30px;
       font-weight: 700;
+      width: 100%;
+      border: none;
     }
 
     .submit-button:hover {
