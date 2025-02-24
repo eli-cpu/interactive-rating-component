@@ -8,6 +8,8 @@ function submit() {
         document.getElementById("submit").style.backgroundColor = "white";
         document.getElementById("submit").style.color = "black";
         window.location.replace("submitted-state.html");
+        let s = "You selected " + rating.toString() + " out of 5";
+        document.getElementById("selected").innerText = s;
     }
 
 }
@@ -25,4 +27,3 @@ function rate(id) {
     rated = true;
     rating = id;
 }
-

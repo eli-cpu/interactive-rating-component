@@ -101,6 +101,32 @@
     }
 
     .thank-you {
-      
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      margin-left: 25%;
+      padding-bottom: 20px;
+    }
+
+    .selected {
+      background-color: hsl(215, 18%, 19%);
+      color: hsl(25, 97%, 53%);
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      padding: 10px;
+      border-radius: 30px;
+      font-weight: 700;
+      width: 50%;
+      margin-left: 25%;
+      border: none;
+    }
+
+    .thx {
+      font-size: 15px;
+      font-weight: 400;
+      color: hsl(217, 12%, 63%);
+      text-align: center;
+      line-height: 25px;
     }
     
