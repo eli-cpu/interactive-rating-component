@@ -9,7 +9,7 @@ function submit() {
         document.getElementById("submit").style.color = "black";
         window.location.replace("submitted-state.html");
         let s = "You selected " + rating.toString() + " out of 5";
-        document.getElementById("selected").innerText = s;
+        document.getElementById("selected-text").innerText = s;
     }
 
 }
