@@ -14,12 +14,9 @@
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
 </head>
 <body>
+  <!-- Rating state start -->
 
   <div class="around-border">
-
-  
-
-  <!-- Rating state start -->
 
   <span class="star"><img src="images/icon-star.svg" alt="Star"></span>
 
@@ -28,34 +25,23 @@
   <p class="text">Please let us know how we did with your support request. All feedback is appreciated 
   to help us improve our offering!</p>
   <ul class="ratings">
-    <li class="rating"><button class="rating-button"><p class="nums">1</p></button></li>
-    <li class="rating"><button class="rating-button"><p class="nums">2</p></button></li>
-    <li class="rating"><button class="rating-button"><p class="nums">3</p></button></li>
-    <li class="rating"><button class="rating-button"><p class="nums">4</p></button></li>
-    <li class="rating"><button class="rating-button"><p class="nums">5</p></button></li>
+    <li class="rating"><button id="1" class="rating-button" onclick="rate(1)"><p class="nums">1</p></button></li>
+    <li class="rating"><button id="2" class="rating-button" onclick="rate(2)"><p class="nums">2</p></button></li>
+    <li class="rating"><button id="3" class="rating-button" onclick="rate(3)"><p class="nums">3</p></button></li>
+    <li class="rating"><button id="4" class="rating-button" onclick="rate(4)"><p class="nums">4</p></button></li>
+    <li class="rating"><button id="5" class="rating-button" onclick="rate(5)"><p class="nums">5</p></button></li>
   </ul>
 
-  <button class="submit-button">S U B M I T</button>
+  <button id="submit" class="submit-button" onclick="submit()">S U B M I T</button>
 
   </div>
 
   <!-- Rating state end -->
 
-  <!-- Thank you state start -->
-
-  You selected <!-- Add rating here --> out of 5
-
-  Thank you!
-
-  We appreciate you taking the time to give a rating. If you ever need more support, 
-  don’t hesitate to get in touch!
-
-  <!-- Thank you state end -->
-
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Elias Anwari</a>.
   </div>
 
   <script src="index.js"></script>
