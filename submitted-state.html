@@ -23,9 +23,13 @@
 
     <img id="thank-you" class="thank-you" src="./images/illustration-thank-you.svg">
 
-    <span id="selected" class="selected">
+    <span id="selected" class="selected" onafterprint="setRating()">
       You selected <!-- Add rating here --> out of 5 
     </span>
+
+    <button onclick="setRating()">CLICK ME!</button>
+
+
 
     <div>
       <h2 class="header" 

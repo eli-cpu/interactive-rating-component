@@ -7,12 +7,12 @@ function submit() {
         document.getElementById("submit").style.backgroundColor = "white";
         document.getElementById("submit").style.color = "black";
         window.location.replace("submitted-state.html");
-        document.getElementById("selected").innerHTML = "You selected " + rating + " out of 5";
+        
     }
 
 }
 
-function rate(id ) {
+function rate(id) {
     if(rated) {
         for (let i = 1; i <= 5; i++) {
             let button = document.getElementById(i.toString());
@@ -25,4 +25,8 @@ function rate(id ) {
     document.getElementById(id.toString()).style.color = "black";
     rated = true;
     rating = id;
+}
+
+function setRating() {
+    document.getElementById("selected").innerHTML = "You selected " + rating + " out of 5";
 }
