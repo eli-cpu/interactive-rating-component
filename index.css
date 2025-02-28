@@ -139,4 +139,10 @@
     #second {
       display: none;
     }
+
+    .attribution {
+        text-underline: none;
+        color: hsl(217, 12%, 63%);
+        text-decoration: none;
+    }
     
