@@ -16,7 +16,7 @@
 <body>index.html
   <!-- Rating state start -->
 
-  <div class="around-border">
+  <div class="around-border" id="first">
 
   <span class="star"><img src="images/icon-star.svg" alt="Star"></span>
 
@@ -37,6 +37,35 @@
   </div>
 
   <!-- Rating state end -->
+
+  <!-- Thank you state start -->
+
+  
+
+  <div class="around-border" id="second">
+
+    <img id="thank-you" class="thank-you" src="./images/illustration-thank-you.svg">
+
+    <span id="selected" class="selected" onafterprint="setRating()">
+      You selected <!-- Add rating here --> out of 5 
+    </span>
+
+
+
+    <div>
+      <h2 class="header" 
+      style="justify-content: center;
+      align-items: center;
+      display: flex;"
+      >Thank you!</h2>
+      <p class="thx">We appreciate you taking the time to give a rating. If you ever need more support, 
+        don’t hesitate to get in touch!</p>
+      
+    </div>
+    
+  </div>
+
+  <!-- Thank you state end -->
 
   
   <div class="attribution">

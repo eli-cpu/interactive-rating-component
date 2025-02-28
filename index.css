@@ -95,10 +95,7 @@
       color: black;
     }
 
-    .rating-button:active {
-      background-color: white;
-      color: black;
-    }
+   
 
     .thank-you {
       justify-content: center;
@@ -129,5 +126,9 @@
       color: hsl(217, 12%, 63%);
       text-align: center;
       line-height: 25px;
+    }
+
+    #second {
+      display: none;
     }
     
