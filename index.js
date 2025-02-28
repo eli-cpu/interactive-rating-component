@@ -1,22 +1,8 @@
 
-let rated = false;
-let rating = 0;
+let rated= false;
+let rating= 0;
 for (let i = 1; i <= 5; i++) {
-    let button = document.getElementById(i.toString());
-    button.style.backgroundColor = "hsl(218, 18%, 19%)";
-    button.style.color = "hsl(217, 12%, 63%)";
-    button.addEventListener("mouseover", hover(i));
-    button.addEventListener("mouseout", out(i));
-}
-
-function hover(num) {
-    document.getElementById(num.toString()).style.backgroundColor = "hsl(25, 97%, 53%)";
-    document.getElementById(num.toString()).style.color = "black";
-}
-
-function out(num) {
-    document.getElementById(num.toString()).style.backgroundColor = "hsl(218, 18%, 19%)";
-    document.getElementById(num.toString()).style.color = "hsl(217, 12%, 63%)";
+    document.getElementById(i.toString()).classList.add("hover");
 }
 
 function submit() {
@@ -30,10 +16,16 @@ function submit() {
 
 function rate(id) {
     if(rated) {
-       
+        for(let i = 1; i <= 5; i++) {
+            document.getElementById(i.toString()).active = false;
+        }
+        document.getElementById(rating.toString()).classList.remove("active");
+        document.getElementById(rating.toString()).classList.add("hover");
+
     }
-    document.getElementById(id.toString()).style.backgroundColor = "white";
-    document.getElementById(id.toString()).style.color = "black";
+    document.getElementById(id.toString()).active = true;
+    document.getElementById(id.toString()).classList.add("active");
+    document.getElementById(id.toString()).classList.remove("hover");
     rated = true;
     rating = id;
 }

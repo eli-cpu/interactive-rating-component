@@ -90,12 +90,20 @@
       aspect-ratio: 1/1;
     }
 
-    .rating-button:hover {
-      background-color: hsl(25, 97%, 53%);
-      color: black;
+    .hover:hover {
+        background-color: hsl(25, 97%, 53%);
+        color: black;
     }
 
-   
+    .active {
+        background-color: white;
+        color: black;
+    }
+
+
+.rating-button:focus {
+        outline: none;
+    }
 
     .thank-you {
       justify-content: center;
